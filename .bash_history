@@ -262,3 +262,171 @@ cd Frontend/
 nano deployment.yaml 
 cd ..
 kubectl get ns
+ls
+cd TWSThreeTierAppChallenge/
+ls
+cd Kubernetes-Manifests-file/
+ls
+nano namespace.yaml
+kubectl apply -f namespace.yaml 
+kubectl get ns
+ls
+cd Database/
+ls
+cat pv.yaml
+cat pvc.yaml
+ls
+cat secrets.yaml
+kubectl apply -f pv.yaml
+kubectl apply -f pcv.yaml
+kubectl apply -f pvc.yaml
+ls
+kubectl apply -f deployment.yaml 
+kubectl apply -f service.yaml 
+kubectl get deployments -n three-tier
+kubectl get pods -n three-tier
+ls
+nano deployment.yaml 
+kubectl delete deployment mongodb
+kubectl delete deployment mongodb -n three-tier
+kubectl delete svc mongo-svc -n three-tier
+kubectl get svc
+nano service.yaml 
+kubectl get svc
+kubectl get pv
+kubectl get pvc
+kubectl get svc -n three-tier
+kubectl delete mongodb-svc -n three-tier
+kubectl delete svc mongodb-svc -n three-tier
+kubeclt get pv -n three-tier
+kubectl get pv -n three-tier
+kubectl apply -f deployment.yaml 
+kubectl apply -f service.yaml 
+kubectl get deployment
+kubectl get deployment -n three-tier
+cd ..
+ls
+cd Backend/
+ls
+cd ..
+cd Database/
+ls
+kubectl apply -f secrets.yaml 
+kubectl get deployments -n three-tier
+kubectl get pods -n three-tier
+kubectl describe pod mongodb-77754765f7-p44g8
+kubectl describe pod mongodb-77754765f7-p44g8 -n three-tier
+ls
+cat secrets.yaml 
+kubectl get secretes -n three-tier
+kubectl get secrete -n three-tier
+kubectl get secrets -n three-tier
+cat secrets.yaml 
+kubectl get pod -n three-ther
+kubectl get pod -n three-tier
+kubectl get pvc -n three-tier
+kubectl logs mongodb-77754765f7-p44g8 -n three-tier
+kubectl describe pvc mongo-volume-claim -n three-tier
+kubectl logs mongodb-77754765f7-p44g8 -n three-tier
+nano deployment.yaml 
+cat deployment.yaml 
+nano deployment.yaml 
+kubectl get deployment
+kubectl get deployment -n three-tier
+kubectl delete deployment -n three-tier
+kubectl delete deployment mongodb -n three-tier
+kubectl apply -f deployment.yaml 
+kubectl get pods -n three-tier
+kubectl logs mongodb-565df49dbb-7hldf -n three-tier
+nano deployment.yaml 
+kubectl delete deployment mongodb -n three-tier
+kubectl apply -f deployment.yaml 
+kubectl get pods -n three-tier
+kubectl get deployments -n three-tier
+cd ..
+cd Backend/
+ls
+kubeclt apply -f deployment.yaml 
+kubectl apply -f deployment.yaml 
+kubectl get pods -n three-tier
+kubeclt delete deployment backend -n three-tier
+kubectl delete deployment backend -n three-tier
+kubectl get pods -n three-tier
+df -h
+free -h
+sudo docker system prune -af
+free -h
+kubectl get pods -n three-tier
+kubectl logs mongodb-5fff87d48d-qnkt8 -n thre-tier
+kubectl logs mongodb-5fff87d48d-qnkt8 -n three-tier
+kubectl get pods -n three-tier
+cd ..
+cd Database/
+ls
+nano deployment.yaml 
+kubectl get pods -n three-tier
+cd ..
+cd Backend/
+nano deployment.yaml 
+kubectl apply -f deployment.yaml 
+kubectl get pods -n three-tier
+kubectl get deployments -n three-tier
+kubectl get pods -n three-tier
+kubectl describe pod backend-6b69d654fb-b299w -n three-tier
+kubectl get pods -n three-tier
+kubeclt delete deployment backend -n three-tier
+kubectl delete deployment backend -n three-tier
+kubectl get pods -n three-tier
+free -h
+kubectl get pods -n three-tier
+kubectl delete mongodb-5fff87d48d-qnkt8 -n three-tier
+kubectl delete  pod mongodb-5fff87d48d-qnkt8 -n three-tier
+kubectl delete pod mongodb-5fff87d48d-gp2sx -n three-tier
+kubectl get pods -n three-tier
+kubectl describe mongodb-5fff87d48d-dnwxm -n three-tier
+kubectl describe  pod mongodb-5fff87d48d-dnwxm -n three-tier
+kubectl get pods -n three-tier
+kubectl delete pod mongodb-5fff87d48d-dnwxm -n three-tier
+kubectl get pods -n three-tier
+kubectl get nodes --show-labels
+kubectl get pods -n three-tier
+kubectl label node ip-172-31-29-177 node-role.kubernetes.io/worker=""
+ls
+cat deployment.yaml 
+nano deployment.yaml 
+kubectl apply -f deployment.yaml 
+kubectl get pods -n three-tier
+kubectl descrie pod backend-9687dc4b7-5q2cx -n three-tier
+kubectl describe pod backend-9687dc4b7-5q2cx -n three-tier
+kubectl get secrets -n three-tier
+cat deployment.yaml 
+nano deployment.yaml 
+kubectl get pods -n three-tier
+kubectl delete deployment backend -n three-tier
+kubectl get pods -n three-tier
+kubectl delete pod  mongodb-5fff87d48d-9ndpn -n three-tier
+kubectl delete pod  mongodb-5fff87d48d-kfhtn -n three-tier
+kubectl get pods -n three-tier
+kubectl delete pods mongodb-5fff87d48d-bchqk -n three-tier
+kubectl get pods -n three-tier
+kubectl describe pod mongodb-5fff87d48d-hzc8s -n three-tier
+kubectl get pods -n three-tier
+kubectl taint nodes master node-role.kubernetes.io/control-plane:NoSchedule-
+kubectl get pods -n three-tier
+kubectl apply -f deployment.yaml 
+kubectl get pods -n three-tier
+kubectl describe pod backend-6d5f5d86b7-4xprr -n three-tier
+kubectl get pods -n three-tier
+kubectl taint nodes ip-172-31-29-177 node.kubernetes.io/disk-pressure:NoSchedule-
+kubectl get pods -n three-tier
+kubectl describe node ip-172-31-29-177
+kubectl get pods -n three-tier
+kubectl delete pod backend-6d5f5d86b7-4xprr -n three-tier
+kubectl rollout restart deployment backend -n three-tier
+kubectl get pods -n three-tier
+sudo docker images
+cd
+ls
+git init
+git add .
+git commit -m "initial commit"
