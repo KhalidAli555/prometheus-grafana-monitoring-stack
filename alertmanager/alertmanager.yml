@@ -1,0 +1,14 @@
+global:
+  smtp_smarthost: 'smtp.gmail.com:587'
+  smtp_from: 'mughalkhalid354@gmail.com'
+  smtp_auth_username: 'mughalkhalid354@gmail.com'
+  smtp_auth_password: 'bcsq wzok wqds rvdc'
+
+route:
+  receiver: email-alert
+
+receivers:
+  - name: email-alert
+    email_configs:
+      - to: 'khalid.cloud.engineer@gmail.com'
+        send_resolved: true
