@@ -1,0 +1,102 @@
+Prometheus Monitoring Stack with Grafana & Alertmanager
+
+A complete monitoring and alerting solution built using Prometheus, Grafana, Node Exporter, and Alertmanager, deployed with Docker Compose on an AWS EC2 Ubuntu server.
+
+Project Overview
+
+This project demonstrates how to build a centralized monitoring system for infrastructure and server health.
+
+The monitoring stack includes:
+
+Prometheus for collecting and storing metrics
+Node Exporter for server metrics such as CPU, RAM, Disk, and Network
+Grafana for dashboards and visualization
+Alertmanager for sending email alerts
+Docker Compose for managing multi-container deployment
+Architecture
+Node Exporter --> Prometheus --> Alertmanager --> Email Alerts
+                      |
+                      --> Grafana Dashboards
+Features
+Real-time server monitoring
+CPU usage alerting
+Email notifications on high resource usage
+Grafana dashboards for visualization
+Containerized deployment using Docker Compose
+Easy to extend for additional servers
+Tech Stack
+Docker
+Docker Compose
+Prometheus
+Grafana
+Node Exporter
+Alertmanager
+Ubuntu Server
+AWS EC2
+Project Structure
+monitoring/
+├── docker-compose.yml
+├── prometheus/
+│   ├── prometheus.yml
+│   └── alerts.yml
+└── alertmanager/
+    └── alertmanager.yml
+Configuration Details
+Docker Compose
+
+Used to deploy and manage:
+
+Prometheus
+Grafana
+Node Exporter
+Alertmanager
+Prometheus
+
+Configured with:
+
+Scrape targets
+Alert rules
+Alertmanager integration
+Alert Rules
+
+Implemented CPU alert:
+
+Trigger when CPU usage exceeds threshold
+Send notification through Alertmanager
+Alertmanager
+
+Configured with SMTP email notifications using Gmail App Password.
+
+Testing
+
+Generated CPU load using:
+
+stress --cpu 4 --timeout 120
+
+Verified:
+
+Metrics collection
+Alert firing
+Email notification delivery
+Access URLs
+Prometheus   : http://SERVER_IP:9090
+Grafana      : http://SERVER_IP:3000
+Alertmanager : http://SERVER_IP:9093
+Node Exporter: http://SERVER_IP:9100
+Learning Outcomes
+
+This project helped me gain hands-on experience in:
+
+Infrastructure monitoring
+Metrics scraping
+Alert rule creation
+Email alert automation
+Dashboard visualization
+Dockerized monitoring stack deployment
+Future Improvements
+RAM usage alerts
+Disk usage alerts
+Multi-server monitoring
+Kubernetes monitoring with Helm
+Slack / Teams notifications
+Website uptime monitoring
