@@ -9,7 +9,7 @@ alertmanager:
       smtp_smarthost: smtp.gmail.com:587
       smtp_from: sender@gmail.com
       smtp_auth_username: sender@gmail.com
-      smtp_auth_password: app passward
+      smtp_auth_password: app passward # not use normal passward
       smtp_require_tls: true
 
     route:
