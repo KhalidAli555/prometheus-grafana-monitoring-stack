@@ -1,0 +1,31 @@
+alertmanager:
+  enabled: true
+
+  alertmanagerSpec:
+    replicas: 1
+
+  config:
+    global:
+      smtp_smarthost: smtp.gmail.com:587
+      smtp_from: sender@gmail.com
+      smtp_auth_username: sender@gmail.com
+      smtp_auth_password: app passward
+      smtp_require_tls: true
+
+    route:
+      receiver: email-notifications
+      group_wait: 5s
+      group_interval: 10s
+      repeat_interval: 1m
+      routes:
+        - matchers:
+            - alertname = "Watchdog"
+          receiver: "null"
+
+    receivers:
+      - name: "null"
+
+      - name: email-notifications
+        email_configs:
+          - to: khalid.cloud.engineer@gmail.com
+            send_resolved: true
